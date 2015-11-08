@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  var baseDate = new Date(Date.parse('2015-11-08 15:40:00 GMT+0900'));
+  var baseDate = Date.parse('2015-11-08 15:40:00 GMT+0900');
 
 	tick(baseDate);
 	setInterval(function() {
@@ -11,7 +11,7 @@ $(document).ready(function() {
 function tick(baseDate) {
 	var currentTime = new Date();
 
-	var diff = currentTime.getTime() - baseDate.getTime();
+	var diff = currentTime.getTime() - baseDate;
 
 	$("#timer").text(format(diff / 1000));
 
