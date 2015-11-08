@@ -1,6 +1,6 @@
 
 $(document).ready(function() {
-  var baseDate = Date.parse('2015-11-08 15:40:00 GMT+0900');
+  var baseDate = Date.parse('Nov 08, 2015 15:40:00 GMT+0900');
 
 	tick(baseDate);
 	setInterval(function() {
